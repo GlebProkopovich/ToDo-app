@@ -1,0 +1,83 @@
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+
+  h1 {
+    font-size: 100px;
+    font-weight: 200;
+    color: rgb(176, 176, 176);
+    margin: 20px;
+  }
+
+  .ToDos-container {
+    width: 500px;
+    background: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+
+    .ToDo-task {
+      height: 80px;
+      display: flex;
+      align-items: center;
+      border-bottom: solid 0.5px rgb(229, 229, 229);
+
+      .dropdownToDosBtn {
+        height: 50px;
+        width: 50px;
+        background: none;
+        border: none;
+        cursor: default;
+
+        span {
+          font-size: 40px;
+          color: rgb(193, 193, 193);
+        }
+      }
+
+      input {
+        height: 50px;
+        width: 400px;
+        padding: 5px;
+        font-size: 20px;
+        color: rgb(193, 193, 193);
+        border: none;
+
+        &::placeholder {
+          color: rgb(193, 193, 193);
+          font-style: italic;
+        }
+      }
+    }
+
+    .ToDos-buttons {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: rgb(94, 94, 94);
+        padding: 10px;
+      }
+
+      .ToDos-button {
+        font-size: 14px;
+        font-weight: 300;
+        color: rgb(94, 94, 94);
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      .active {
+        border-radius: 5px;
+        outline: solid 2px rgb(213, 213, 213);
+      }
+    }
+  }
+}
