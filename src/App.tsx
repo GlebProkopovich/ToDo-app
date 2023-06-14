@@ -1,4 +1,11 @@
-import { ChangeEvent, FC, useEffect, useRef, useState } from 'react';
+import {
+  ChangeEvent,
+  FC,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToDoIntoList, changeToDoList } from './state/action-creators';
 import { IToDo, IToDoList } from './types';
@@ -50,10 +57,15 @@ const App: FC = () => {
     setToDoTaskValue(e.target.value);
   };
 
-  const handleKeyPressEnter = (): void => {
+  // const handleKeyPressEnter = (): void => {
+  //   dispatch(addToDoIntoList({ text: toDoTaskValue, type: 'active' }));
+  //   setToDoTaskValue('');
+  // };
+
+  const handleKeyPressEnter = useCallback(() => {
     dispatch(addToDoIntoList({ text: toDoTaskValue, type: 'active' }));
     setToDoTaskValue('');
-  };
+  }, [dispatch, toDoTaskValue]);
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -69,7 +81,7 @@ const App: FC = () => {
       inputElement &&
         inputElement.removeEventListener('keypress', handleKeyPress);
     };
-  }, [toDoTaskValue]);
+  }, [toDoTaskValue, handleKeyPressEnter]);
 
   useEffect(() => {
     const filteredActiveToDos = toDoList.filter((el) => el.type === 'active');
