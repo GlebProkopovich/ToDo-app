@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+<br />
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">ToDo app</h3>
 
-## Available Scripts
+  <p align="center">
+  Данный учебный проект предназначен для планирования своих задач<br />
+  </p>
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+### Использованные технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* React
+* Redux
+* Typescript
+* Scss
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Запуск приложения локально
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Установка
 
-### `npm run build`
+1. Клонируем репозиторий
+   ```sh
+   git clone https://github.com/GlebProkopovich/ToDo-app
+   ```
+   
+   
+2. Устанавливаем все необходимые зависимости
+   ```sh
+   npm i
+   ```
+   
+   
+3. Запускаем приложение
+   ```sh
+   npm start
+   ```
+   
+## Использование
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Для добавления задачи заполняем поле ввода с плейсхолдером "What needs to be done?" и нажимаем клавишу Enter.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://i.ibb.co/4VrzK6x/2023-06-14-15-29-45.png" alt="Interface" width="1000" height="400">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Поставив галочку напротив задачи - она будет отмечена, как выполненная. Для просмотра всех, активных и выполненных задач используются кнопки All, Active, Completed.
 
-### `npm run eject`
+<img src="https://i.ibb.co/6FBdZT3/2023-06-14-15-32-45.png" alt="Interface" width="1000" height="400">
+   
+   3. Для удаления выполненных задач нажимаем кнопку Clear completed.
+   
+<img src="https://i.ibb.co/yQp2J5H/2023-06-14-15-36-42.png" alt="Interface" width="1000" height="400">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Задеплоенный проект
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Так же проект задеплоен и можно его использовать онлайн по ссылке:
+https://to-do-app-lovat-one.vercel.app/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- CONTACT -->
+## Контакт
 
-## Learn More
+Почта - glebprokopovich@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ссылка на проект: https://github.com/GlebProkopovich/ToDo-app
