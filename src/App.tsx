@@ -57,11 +57,6 @@ const App: FC = () => {
     setToDoTaskValue(e.target.value);
   };
 
-  // const handleKeyPressEnter = (): void => {
-  //   dispatch(addToDoIntoList({ text: toDoTaskValue, type: 'active' }));
-  //   setToDoTaskValue('');
-  // };
-
   const handleKeyPressEnter = useCallback(() => {
     dispatch(addToDoIntoList({ text: toDoTaskValue, type: 'active' }));
     setToDoTaskValue('');
